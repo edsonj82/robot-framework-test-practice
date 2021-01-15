@@ -1,5 +1,5 @@
 ***Settings***
-Library             Selenium
+Resource             ../resource/Resource.robot
 ### SETUP roda keywords antes da suite ou antes de um Teste
 ### TEARDOWN roda depois de uma suite ou um teste
 
