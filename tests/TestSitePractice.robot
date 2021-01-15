@@ -1,11 +1,15 @@
 ***Settings***
-Library     Selenium
+Library             Selenium
+### SETUP roda keywords antes da suite ou antes de um Teste
+### TEARDOWN roda depois de uma suite ou um teste
 
+Test Setup          Abrir navegador
+Test Teardown       Fechar navegador
 
 
 ***Variables***
-${URL}          http://automationpractice.com
-${BROWSER}      chrome
+${URL}              http://automationpractice.com
+${BROWSER}          chrome
 
 
 
@@ -24,7 +28,7 @@ Acessar a pagina home do site
     Conferir se a página home foi exibida
     Digitar o nome do produto "itemNãoExistente" no campo de pesquisa
     Clicar no botão pesquisar
-    Conferir se o produto "itemNãoExistente" foi listado no site
+    Conferir mensagem de erro "No results were found for your search "itemNãoExistente""
 
 
 ***Keywords***
