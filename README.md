@@ -35,7 +35,9 @@ Robot Framework | é uma estrutura genérica de automação de teste para testes
 ## Passos de Configuração:
 
 1 - Escolher uma IDE de uso para automatizar seus testes. Ex: VSCode
+
 2 - Instalar o Python
+
 3 - Instalar o Robot Framework 
 <br>
 
