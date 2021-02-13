@@ -5,7 +5,6 @@ Library             SeleniumLibrary
 ${URL}              http://automationpractice.com
 ${BROWSER}          firefox
 
-
 ***Keywords***
 ### Setup & Teardown
 Abrir navegador
@@ -31,3 +30,8 @@ Conferir se o produto "${PRODUTO}" foi listado no site
     #19 - Parte 3 - confrencia - udemy
     Page Should Contain Image     xpath=//*[@id="center_column"]//*[@src='http://automationpractice.com/img/p/7/7-home_default.jpg']
     Page Should Contain Link         xpath=//*[@id="center_column"]//a[@class="product-name"][contains(text(),"${PRODUTO}")]
+
+#UC02
+Conferir mensagem de erro "${MESSAGE}"
+    Wait Until Element Is Visible       //*[@id="center_column"]/p[@class='alert alert-warning']
+    Element Text Should Be              //*[@id="center_column"]/p[@class='alert alert-warning']        ${MESSAGE}
