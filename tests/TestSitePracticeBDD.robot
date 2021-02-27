@@ -20,3 +20,15 @@ Cenário 02: Pesquisar produto não existente
     Então a página deve exibir a mensagem "No results were found for your search "itemNãoExistente""
 
 ***Keywords***
+Dado que estou na pagina home do site
+    Acessar a pagina home do site
+
+Quando eu pesquisar pelo produto "${PRODUTO}"
+    Digitar o nome do produto "${PRODUTO}" no campo de pesquisa
+    Clicar no botão pesquisar
+
+Então o produto "${PRODUTO}" deve ser listado na página do resultado da busca
+    Conferir se o produto "${PRODUTO}" foi listado no site
+
+Então a página deve exibir a mensagem "${MESSAGE}"
+    Conferir mensagem de erro "${MESSAGE}"

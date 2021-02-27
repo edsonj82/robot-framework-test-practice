@@ -27,7 +27,7 @@ Clicar no botão pesquisar
 Conferir se o produto "${PRODUTO}" foi listado no site
     Wait Until Element Is Visible       css=#center_column > h1
     Title Should Be         Search - My Store
-    #19 - Parte 3 - confrencia - udemy
+    #19 - Parte 3 - conferencia - udemy
     Page Should Contain Image     xpath=//*[@id="center_column"]//*[@src='http://automationpractice.com/img/p/7/7-home_default.jpg']
     Page Should Contain Link         xpath=//*[@id="center_column"]//a[@class="product-name"][contains(text(),"${PRODUTO}")]
 
